@@ -14,5 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Failed to send message.";
     }
+else {
+        // Handle error or redirect
+        echo "Error: Method Not Allowed!";
+    }
 }
 ?>
