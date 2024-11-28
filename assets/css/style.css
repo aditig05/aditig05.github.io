@@ -724,6 +724,43 @@ main { overflow-x: hidden; }
 
 .project-card:is(:hover, :focus) .publish-date { transition-delay: 0.1s; }
 
+/* Popup Styles */
+.project-card .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 20px;
+  background-color: var(--bg-primary);
+  color: var(--color-secondary);
+  border-radius: var(--radius-8);
+  box-shadow: var(--shadow-2);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+  z-index: 1;
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
+}
+
+.project-card:hover .popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Style for Project Name Popup */
+.project-card .popup-title {
+  font-size: var(--fs-5);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style for Description Popup */
+.project-card .popup-description {
+  font-size: var(--fs-6);
+  color: var(--color-tertiary);
+}
+
 .load-more {
   font-size: var(--fs-4);
   color: var(--raw-seinna);
