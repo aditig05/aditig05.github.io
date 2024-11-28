@@ -1305,119 +1305,34 @@ textarea.input-field {
  * responsive for larger than 1200px screen
  */
 
-
-
-@media (min-width: 550px) {
+@media (min-width: 1200px) {
 
   /**
    * REUSED STYLE
    */
 
-  .container {
-    max-width: 550px;
-    margin-inline: auto;
-  }
+  .container { max-width: 1150px; }
 
-  .section-title {
-    max-width: 500px;
-    margin-bottom: 40px;
-  }
+  .section-title { max-width: 460px; }
 
-  .btn {
-    padding: 12px 30px;
-  }
 
-  /**
-   * HEADER
-   */
 
-  .header .container {
-    gap: 20px;
-  }
-
-  .navbar-actions {
-    gap: 20px;
-  }
 
   /**
    * HERO
    */
 
-  .hero-title {
-    font-size: calc(var(--fs-2) + 0.5rem);
-  }
+  .hero-social-list { left: -80px; }
 
-  .hero-content {
-    max-width: 600px;
-  }
+  .scroll-down { right: -80px; }
 
-  /**
-   * STATS
-   */
 
-  .stats-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
+
 
   /**
    * ABOUT
    */
 
-  .about-banner {
-    max-width: 500px;
-  }
-
-  /**
-   * SKILLS
-   */
-
-  .skills-toggle {
-    padding: 10px;
-  }
-
-  .skill-card {
-    width: 100px;
-    height: 100px;
-  }
-
-  /**
-   * PROJECT
-   */
-
-  .project-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .project-card {
-    margin: 0;
-  }
-
-  /**
-   * CONTACT
-   */
-
-  .contact-list-item {
-    gap: 20px;
-  }
-
-  .contact-social-link {
-    width: 40px;
-    height: 40px;
-  }
-
-  .contact-form {
-    padding: 30px;
-  }
-
-  /**
-   * FOOTER
-   */
-
-  .footer {
-    padding: 30px 20px;
-  }
+  .about-banner { max-width: 450px; }
 
 }
