@@ -1021,25 +1021,19 @@
 
   <footer class="footer">
     <div class="container">
-
       <p class="h1 logo">
-        <a href="#">
-          Aditi Gupta<span>.</span>
-        </a>
+        <a href="#">Aditi Gupta<span>.</span></a>
       </p>
-
-    <!-- Do something about this -->
       <p class="copyright">
-        &copy; 2024 <a href="#">deviant and codewithsadee</a>. All rights reserved
+        &copy; 2024 <a href="#">deviant and codewithsadee</a>. All rights reserved.
       </p>
-
+      <div id="visitor-counter">Fetching visitor count...</div>
     </div>
-    <div id="visitor-counter">Loading...</div>
     <script>
       // Namespace and key for CountAPI
-      const namespace = "your-namespace"; // Replace with a unique name for your site
-      const key = "page-views"; // Replace with a meaningful key
-    
+      const namespace = "aditi-gupta-portfolio";
+      const key = "homepage";
+      
       // Fetch and increment the visitor count
       fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
         .then(response => response.json())
@@ -1048,13 +1042,19 @@
         })
         .catch(error => {
           console.error("Error fetching visitor count:", error);
-          document.getElementById('visitor-counter').textContent = "Visitors: Error!";
+          document.getElementById('visitor-counter').textContent = "Visitors: Unable to load count.";
         });
     </script>
-    
-
+    <style>
+      #visitor-counter {
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: #666;
+        text-align: center;
+      }
+    </style>
   </footer>
-
+  
 
 
 
