@@ -52,7 +52,7 @@ navToggleBtn.addEventListener("click", function () {
 document.getElementById('downloadcv').addEventListener('click', function() {
   var link = document.createElement('a');
   link.href = '/assets/Resume_Aditi.pdf; // Replace with the actual path to your PDF file
-  link.download = 'Aditi_Resume.pdf'; // Replace with the desired name for your downloaded PDF file
+  link.download = 'Resume_Aditi.pdf'; // Replace with the desired name for your downloaded PDF file
   console.log("Clicked")
   document.body.appendChild(link);
   link.click();
